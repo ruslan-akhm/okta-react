@@ -147,7 +147,13 @@ function CreateUser(props) {
             className={classes.showPassword}
             onClick={() => setShowPassword(!showPassword)}
           >
-            {showPassword ? <VisibilityOffIcon /> : <VisibilityIcon />}
+            {newUser.password.length > 0 ? (
+              showPassword ? (
+                <VisibilityOffIcon />
+              ) : (
+                <VisibilityIcon />
+              )
+            ) : null}
           </IconButton>
           <TextField
             label="Email*"
