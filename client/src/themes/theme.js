@@ -12,9 +12,3 @@ export const theme = createMuiTheme({
     dark: { main: "#2b2d42" },
   },
 });
-
-// #f0efe9 - background
-// - regular white for posts and text input div
-// - #0076b7 - primary
-// - #b72500 - secondary
-// #1d3557 - navbar
