@@ -1,23 +1,12 @@
-import { useEffect, useContext } from "react";
+import { useContext } from "react";
 import Api from "../../services/Api";
 import { useOktaAuth } from "@okta/okta-react";
 import { PostsContext } from "../../context/PostsContext";
-import {
-  makeStyles,
-  Grid,
-  Button,
-  TextField,
-  Box,
-  Typography,
-  Grow,
-} from "@material-ui/core";
+import { makeStyles, Grid, Button, Typography, Grow } from "@material-ui/core";
 import EditIcon from "@material-ui/icons/Edit";
 import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
 
 const useStyles = makeStyles(theme => ({
-  cardButtons: {
-    border: "1px solid red",
-  },
   icons: {
     fontSize: "18px",
     marginLeft: "3px",

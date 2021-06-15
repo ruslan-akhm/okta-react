@@ -109,14 +109,15 @@ function CreateUser(props) {
   };
 
   const cancel = () => {
-    setShowModal(false);
     setNewUser({
       email: "",
       password: "",
       firstName: "",
       lastName: "",
     });
+    setShowModal(false);
     setLoading(false);
+    setError();
   };
 
   return (
@@ -185,12 +186,7 @@ function CreateUser(props) {
             onChange={e => handleInputChange(e)}
           />
           {error ? (
-            <Alert
-              onClose={() => setError()}
-              severity="error"
-              variant="filled"
-              className={classes.alert}
-            >
+            <Alert onClose={() => setError()} severity="error" variant="filled">
               {error}
             </Alert>
           ) : null}

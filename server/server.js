@@ -60,7 +60,7 @@ finale.initialize({
 });
 
 // Create the dynamic REST resource for our Post model
-let userResource = finale.resource({
+finale.resource({
   model: Post,
   endpoints: ["/posts", "/posts/:id"],
 });

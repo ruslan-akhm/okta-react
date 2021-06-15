@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import { useOktaAuth } from "@okta/okta-react";

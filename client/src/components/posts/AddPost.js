@@ -41,12 +41,10 @@ function AddPost() {
   };
 
   const submitPost = () => {
-    //title can not be empty
     if (newPost.title.length < 1) {
       return setAlert(true);
     }
-    //if there is id - edit the post
-    //otherwise (id===null) - add new post
+    //if there is id - edit the post, otherwise (id===null) - add new post
     if (newPost.id === null) {
       (async () => {
         let response = await Api.createPost(accessToken, newPost);
@@ -80,7 +78,6 @@ function AddPost() {
       container
       justify="flex-start"
       direction="column"
-      style={{}}
       className={classes.addPostBox}
     >
       <TextField

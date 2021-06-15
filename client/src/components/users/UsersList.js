@@ -32,8 +32,7 @@ function UsersList(props) {
   const classes = useStyles();
   const { authState } = useOktaAuth();
   const { accessToken } = authState.accessToken;
-  const { users, setUsers } = useContext(PostsContext);
-  const [layout, setLayout] = useState("blocks"); //list or blocks
+  const { users, setUsers, layout, setLayout } = useContext(PostsContext);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

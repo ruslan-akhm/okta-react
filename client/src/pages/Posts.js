@@ -7,9 +7,6 @@ import { makeStyles, Grid } from "@material-ui/core";
 import PostCard from "../components/posts/PostCard";
 
 const useStyles = makeStyles(theme => ({
-  post: {
-    width: "100%",
-  },
   postsBox: {
     backgroundColor: theme.palette.background.main,
     minHeight: "100vh",

@@ -2,7 +2,7 @@ const okta = require("@okta/okta-sdk-nodejs");
 
 const client = new okta.Client({
   orgUrl: "https://dev-41008785.okta.com/",
-  token: process.env.TOKEN, // Obtained from Developer Dashboard
+  token: process.env.TOKEN,
 });
 
 //get all users

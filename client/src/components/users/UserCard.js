@@ -12,7 +12,6 @@ import {
   Popover,
   Box,
 } from "@material-ui/core";
-
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
 const useStyles = makeStyles(theme => ({
@@ -36,7 +35,6 @@ const useStyles = makeStyles(theme => ({
     justifyContent: "space-between",
   },
   popoverText: {
-    //border: "2px solid red",
     backgroundColor: theme.palette.dark.main,
     padding: theme.spacing(1),
     color: "#fff",
