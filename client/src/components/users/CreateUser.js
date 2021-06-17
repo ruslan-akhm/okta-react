@@ -103,8 +103,15 @@ function CreateUser(props) {
         const updatedUsers = [...users, response.user];
         setUsers(updatedUsers);
         setShowModal(false);
+        setNewUser({
+          email: "",
+          password: "",
+          firstName: "",
+          lastName: "",
+        });
       }
     })();
+
     setLoading(false);
   };
 
